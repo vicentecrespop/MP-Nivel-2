@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="valor" />
+    <button onclick="add()">Adicionar</button>
+    <select name="order" id="order">
+        <option value="bubble_sort">Bubble Sort</option>
+        <option value="selection_sort">Selection Sort</option>
+        <option value="quick_sort">Quick Sort</option>
+    </select>
+
+    <button onclick="ordenar()">Ordenar</button>
+
+    <button onclick="misturar()">Misturar</button>
+
+    <ul id="valores">
+    </ul>
+
+    <script>
+        function add() {
+
+            const num = document.getElementById('valor').value
+            const list = document.getElementById('valores')
+            const list_item = document.createElement('li')
+            const item_value = document.createTextNode(num)
+            list_item.appendChild(item_value)
+            list.appendChild(list_item)
+
+        }
+
+        function ordenar() {
+
+        }
+
+        function misturar() {
+
+        }
+    </script>
+    <script src="ordenando.js"></script>
+</body>
+</html>
+
+<!-- Terminei a função add -->
